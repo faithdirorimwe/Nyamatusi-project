@@ -1,0 +1,1145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  height: 70px;
+}
+.navbar .navbar-brand h2 span {
+  font-family: papyrus;
+  letter-spacing: 1px;
+  color: #e75432;
+  margin-left: 50px;
+}
+
+#banner {
+  height: 70vh;
+}
+#banner img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#banner .banner-inner {
+  position: absolute;
+  top: 0;
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+#banner .banner-inner h1 {
+  margin-top: 55%;
+  font-size: 35px;
+  font-family: "gothamlight";
+  color: rgb(255, 255, 255);
+}
+#banner .banner-inner h1 span {
+  font-size: 40px;
+  font-family: "gothambold";
+}
+#banner .b-inner {
+  display: none;
+}
+#banner button {
+  position: absolute;
+  left: 45%;
+  top: 85%;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  padding: 10px;
+  transform: rotate(90deg);
+  border: none;
+  font-family: "gothamlight";
+}
+#banner .icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#banner .icons i {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#about {
+  height: 100vh;
+}
+#about .story {
+  font-family: "gothamlight";
+  line-height: 24px;
+}
+#about .story .heading {
+  font-size: 20px;
+  padding-top: 40px;
+}
+#about .story .heading h2 {
+  margin-top: 30px;
+}
+#about .story p {
+  margin-top: 20px;
+}
+#about .story .btn {
+  background-color: #e93f33;
+  border: 2px solid #E93F33;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "gothambold";
+  padding: 10px;
+  line-height: 1.5;
+}
+#about .image-one {
+  display: none;
+}
+#about .story-img {
+  display: none;
+}
+
+#activities {
+  width: 100vw;
+}
+#activities .heading {
+  font-size: 20px;
+  padding-top: 40px;
+}
+#activities .heading h2 {
+  margin: 30px 0;
+  font-family: "gothamlight";
+}
+#activities .act-img {
+  padding-top: 40px;
+  width: 80%;
+  height: 80vh;
+}
+#activities .act-img .overlay {
+  background-image: linear-gradient(rgba(25, 10, 1, 0), #0f0600);
+  height: 100%;
+  width: 100%;
+}
+#activities .one {
+  background-image: url(../images/Rectangle\ 17.png);
+  background-size: cover;
+  width: 100%;
+}
+#activities .two {
+  background-image: url(../images/Rectangle\ 16.png);
+  background-size: cover;
+  width: 100%;
+}
+#activities .three {
+  background-image: url(../images/Rectangle\ 18.png);
+  background-size: cover;
+  width: 100%;
+}
+#activities .four {
+  background-image: url(../images/Rectangle\ 19.png);
+  background-size: cover;
+  width: 100%;
+}
+#activities .five {
+  background-image: url(../images/Rectangle\ 20.png);
+  background-size: cover;
+  width: 100%;
+}
+#activities .row {
+  display: none;
+}
+#activities .acts {
+  display: none;
+}
+
+.sightings {
+  margin: 25px 0;
+  font-family: "gothamlight";
+  line-height: 24px;
+}
+.sightings .heading {
+  font-size: 20px;
+  padding-top: 40px;
+}
+.sightings .heading h2 {
+  margin-top: 30px;
+}
+.sightings p {
+  margin-top: 20px;
+}
+.sightings .sight {
+  height: 150px;
+}
+.sightings .sight.one {
+  display: none;
+}
+.sightings .sight.three {
+  display: none;
+}
+.sightings .sight.two {
+  display: none;
+}
+.sightings .sight-last {
+  display: none;
+}
+
+#suggestion {
+  margin: 0 auto;
+  font-family: "gothamlight";
+}
+#suggestion .suggest-inner {
+  display: none;
+}
+#suggestion .suggestion-img {
+  display: none;
+}
+#suggestion .suggestion-img-one {
+  display: none;
+}
+#suggestion .suggestion-inner-right {
+  display: none;
+}
+#suggestion .heading {
+  font-size: 20px;
+  padding-top: 40px;
+}
+#suggestion .heading h2 {
+  margin-top: 30px;
+}
+#suggestion .suggestion-inner {
+  height: 100%;
+  width: 100%;
+  background-color: #E93F33;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+}
+#suggestion .suggestion-inner h6 {
+  font-size: 10px;
+  margin-bottom: 15px;
+  font-family: "gothambold";
+}
+#suggestion .suggestion-inner p {
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-size: 15;
+}
+#suggestion .suggestion-inner li {
+  line-height: 20px;
+}
+#suggestion .suggestion-inner span {
+  line-height: 180px;
+  font-family: "gothambold";
+  border: 2px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+
+#testimonials {
+  margin: 25px 0;
+  font-family: "gothamlight";
+  line-height: 24px;
+}
+#testimonials .heading {
+  font-size: 30px;
+  padding-top: 72px;
+  padding-bottom: 50px;
+}
+#testimonials .heading h2 {
+  margin-top: 30px;
+}
+#testimonials .test {
+  display: none;
+}
+#testimonials .testimonial-inner {
+  display: none;
+}
+#testimonials .img-two {
+  border: 1px solid #e93f33;
+  height: 60vh;
+  text-align: center;
+  padding-top: 120px;
+}
+#testimonials .img-two p {
+  padding-top: 10px;
+  line-height: 25px;
+}
+#testimonials .img-two hr {
+  color: #E93F33;
+  width: 30%;
+  margin-left: 238px;
+}
+#testimonials .img-two h6 {
+  font-family: "gothambold";
+  font-style: italic;
+  padding-top: 10px;
+}
+
+#gallery {
+  margin: 25px auto;
+  font-family: "gothamlight";
+}
+#gallery .heading {
+  font-size: 20px;
+  padding-top: 40px;
+}
+#gallery .heading h2 {
+  margin-top: 30px;
+}
+
+#footer {
+  font-family: "gothamlight";
+  height: 100vh;
+  margin-top: 80px;
+  background-color: #E93F33;
+  color: rgb(255, 255, 255);
+}
+#footer .foot {
+  line-height: 30px;
+}
+#footer .foot h5 {
+  margin-top: 42px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "gothambold";
+}
+#footer .foot p {
+  font-size: 15px;
+}
+
+footer {
+  border: none;
+  border-top: 1px solid #fff;
+  font-family: "gothamlight";
+  height: 10vh;
+  background-color: #E93F33;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+footer p {
+  font-size: 10px;
+  padding-top: 28px;
+}
+
+@media (min-width: 768px) {
+  #banner {
+    height: 90vh;
+  }
+  #banner .banner-inner {
+    height: 90vh;
+  }
+  #banner .banner-inner h1 {
+    font-size: 60px;
+  }
+  #banner .banner-inner h1 span {
+    font-size: 100px;
+  }
+  #about {
+    height: 70vh;
+  }
+  #about .story {
+    margin-bottom: 500px;
+  }
+  #about .story .heading {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  #about .story .heading h2 {
+    margin-top: 60px;
+  }
+  #about .story p {
+    margin-top: 10px;
+  }
+  #about .story-img {
+    display: none;
+  }
+  #about .image-one {
+    display: block;
+    padding-top: 130px;
+  }
+  #activities #carouselExampleCaptions {
+    display: none;
+  }
+  #activities .heading {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  #activities .heading h2 {
+    margin-top: 10px;
+  }
+  #activities .row {
+    display: block;
+  }
+  #activities .row .pictures {
+    display: flex;
+    font-family: "gothamlight";
+  }
+  #activities .row .pictures .overlay {
+    background-image: linear-gradient(rgba(25, 10, 1, 0), #0f0600);
+    width: 100%;
+    height: 100%;
+    padding-top: 250px;
+    text-align: center;
+  }
+  #activities .row .pictures .overlay h5 {
+    font-family: "gothambold";
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  #activities .row .pictures .overlay p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #activities .row .pictures .p-one {
+    background-image: url(../images/Rectangle\ 16.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-right: 10px;
+  }
+  #activities .row .pictures .p-two {
+    background-image: url(../images/Rectangle\ 18.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  #activities .row .pictures .p-three {
+    background-image: url(../images/Rectangle\ 19.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-right: 10px;
+  }
+  #activities .row .pictures .p-four {
+    background-image: url(../images/Rectangle\ 20.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .sightings {
+    margin: 50px 0;
+    font-family: "gothamlight";
+  }
+  .sightings .sight {
+    height: 150px;
+  }
+  .sightings .sight.one {
+    display: block;
+  }
+  .sightings .sight.three {
+    display: block;
+  }
+  .sightings .sight.two {
+    display: block;
+  }
+  .sightings .sight-last {
+    display: block;
+  }
+  .sightings .heading {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .sightings .heading h2 {
+    padding-bottom: 20px;
+  }
+  .sightings p {
+    line-height: 25px;
+  }
+  .sightings .sight {
+    height: 180px;
+  }
+  .sightings .sight img {
+    height: 100%;
+    width: 100%;
+  }
+  .sightings .sight.one {
+    margin-top: 50px;
+  }
+  .sightings .sight.two {
+    margin-top: 100px;
+  }
+  .sightings .sight.three {
+    margin-top: 25px;
+  }
+  .sightings .sight-right {
+    height: 200px;
+    margin: 25px 0;
+  }
+  .sightings .sight-right img {
+    height: 100%;
+  }
+  .sightings .sight-last {
+    margin-top: 100px;
+  }
+  #suggestion {
+    width: 100vw;
+    margin: 0 auto;
+    font-family: "gothamlight";
+  }
+  #suggestion .suggest-inner {
+    display: block;
+  }
+  #suggestion .suggest {
+    display: none;
+  }
+  #suggestion .heading {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  #suggestion .heading h2 {
+    padding-bottom: 20px;
+  }
+  #suggestion .one {
+    background-image: url(../images/Rectangle\ 37.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 400px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  #suggestion .one .overlay {
+    background-image: linear-gradient(rgba(25, 10, 1, 0), #0f0600);
+    width: 100%;
+    height: 100%;
+  }
+  #suggestion .one .overlay h4 {
+    font-family: "gothambold";
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  #suggestion .one .overlay p {
+    padding-bottom: 20px;
+  }
+  #testimonials {
+    width: 100vw;
+    margin: 0 auto;
+    font-family: "gothamlight";
+  }
+  #testimonials .test {
+    display: none;
+  }
+  #testimonials .testimonial-inner .heading {
+    font-size: 30px;
+    padding-top: 100px;
+  }
+  #testimonials .testimonial-inner .heading h2 {
+    padding-bottom: 20px;
+  }
+  #testimonials .testimonial-inner .img-three {
+    background-image: url(../IMG/Rectangle\ 45.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "gothambold";
+    font-style: italic;
+    text-align: center;
+  }
+  #testimonials .testimonial-inner .img-three .overlay {
+    background-color: rgba(198, 76, 28, 0.5137);
+    width: 100%;
+    height: 100%;
+    padding-top: 555px;
+  }
+  #testimonials .testimonial-inner .img-two {
+    border: 1px solid #e93f33;
+    height: 60vh;
+    text-align: center;
+    padding-top: 80px;
+  }
+  #testimonials .testimonial-inner .img-two p {
+    padding-top: 60px;
+    line-height: 25px;
+  }
+  #testimonials .testimonial-inner .img-two hr {
+    color: #E93F33;
+    width: 30%;
+    margin-left: 249px;
+  }
+  #testimonials .testimonial-inner .img-two h6 {
+    font-family: "gothambold";
+    font-style: italic;
+    padding-top: 42px;
+  }
+  #gallery {
+    width: 100vw;
+    margin: 0 auto;
+    font-family: "gothamlight";
+  }
+  #gallery .heading {
+    font-size: 30px;
+    padding-top: 100px;
+  }
+  #gallery .heading h2 {
+    padding-bottom: 20px;
+  }
+  #footer {
+    font-family: "gothamlight";
+    height: 25vh;
+    margin-top: 80px;
+    background-color: #E93F33;
+    color: rgb(255, 255, 255);
+  }
+  #footer .foot {
+    line-height: 28px;
+    font-size: 13px;
+  }
+  #footer .foot h5 {
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "gothambold";
+  }
+  #footer .foot p {
+    font-size: 10px;
+  }
+  footer {
+    border: none;
+    border-top: 1px solid #fff;
+    font-family: "gothamlight";
+    height: 5vh;
+    background-color: #E93F33;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  footer p {
+    padding-top: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner {
+    background: url(../images/zebra\ banner\ 2\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  #banner img {
+    display: none;
+  }
+  #banner .banner-inner {
+    display: none;
+  }
+  #banner .b-inner {
+    display: block;
+    text-align: center;
+    padding-top: 20.5%;
+  }
+  #banner .b-inner h1 {
+    color: rgb(255, 255, 255);
+    font-family: "gothamlight";
+    font-size: 120px;
+  }
+  #about {
+    height: 100vh;
+  }
+  #about .story {
+    line-height: 25px;
+    margin-top: 30px;
+  }
+  #about .story .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  #about .story .heading h2 {
+    padding-bottom: 80px;
+  }
+  #about .story p {
+    margin-top: 30px;
+  }
+  #about .story-img {
+    display: block;
+  }
+  #about .image-one {
+    width: 85%;
+    margin-left: 50px;
+    margin-top: 90px;
+  }
+  #about .image-two {
+    margin-top: 80px;
+    width: 70%;
+  }
+  #about .image-three {
+    margin-top: 20px;
+    width: 70%;
+  }
+  #activities {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #activities .row {
+    display: none;
+  }
+  #activities .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  #activities .heading h2 {
+    padding-bottom: 80px;
+  }
+  #activities .acts {
+    display: block;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-right: 60px;
+  }
+  #activities .acts .activity-inner {
+    margin: 0 7px;
+  }
+  #activities .acts .activity-inner .image-one {
+    background-image: url(../images/Rectangle\ 17.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  #activities .acts .activity-inner .image-two {
+    background-image: url(../images/Rectangle\ 16.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  #activities .acts .activity-inner .image-three {
+    background-image: url(../images/Rectangle\ 18.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  #activities .acts .activity-inner .image-four {
+    background-image: url(../images/Rectangle\ 19.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  #activities .acts .activity-inner .image-five {
+    background-image: url(../images/Rectangle\ 20.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  #activities .acts .activity-inner .absolute {
+    height: 100%;
+    background-image: linear-gradient(rgba(25, 10, 1, 0), #0f0600);
+    position: relative;
+    overflow-y: hidden;
+  }
+  #activities .acts .activity-inner .absolute .activity-text {
+    bottom: -29px;
+    color: white;
+    position: absolute;
+    bottom: -176px;
+    transition: all 1s ease;
+    padding: 30px;
+  }
+  #activities .acts .activity-inner .absolute .activity-text h5 {
+    font-size: 15px;
+    font-family: "gothambold";
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #activities .acts .activity-inner .absolute .activity-text p {
+    font-family: "gothamlight";
+    -moz-text-align-last: 20px;
+         text-align-last: 20px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #activities .acts .activity-inner .absolute:hover .activity-text {
+    bottom: 0;
+  }
+  .sightings {
+    margin: 200px 0;
+    font-family: gothamlight;
+  }
+  .sightings .sight {
+    height: 300px;
+  }
+  .sightings .sight img {
+    height: 100%;
+    width: 100%;
+  }
+  .sightings .sight.one {
+    margin-top: 100px;
+  }
+  .sightings .sight.two {
+    margin-top: 200px;
+  }
+  .sightings .sight.three {
+    margin-top: 50px;
+  }
+  .sightings .sight-right {
+    height: 300px;
+    margin-top: 100px;
+  }
+  .sightings .sight-right img {
+    height: 100%;
+  }
+  .sightings .sight-last {
+    margin-top: 100px;
+  }
+  .sightings .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .sightings .heading h2 {
+    padding-bottom: 80px;
+  }
+  .sightings p {
+    line-height: 25px;
+  }
+  #suggestion {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: "gothamlight";
+  }
+  #suggestion .suggest-inner {
+    display: none;
+  }
+  #suggestion .suggest {
+    display: block;
+  }
+  #suggestion .suggestion-img {
+    display: block;
+  }
+  #suggestion .suggestion-img-one {
+    display: block;
+  }
+  #suggestion .suggestion-inner-right {
+    display: block;
+    height: 100%;
+  }
+  #suggestion .suggestion-inner-right img {
+    height: 100%;
+  }
+  #suggestion .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  #suggestion .heading h2 {
+    padding-bottom: 80px;
+  }
+  #suggestion .suggestion-inner {
+    height: 100%;
+    width: 100%;
+    background-color: #E93F33;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+  }
+  #suggestion .suggestion-inner h6 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: "gothambold";
+  }
+  #suggestion .suggestion-inner p {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  #suggestion .suggestion-inner li {
+    line-height: 25px;
+  }
+  #suggestion .suggestion-inner hr {
+    width: 100%;
+    height: 4px;
+    opacity: 1;
+  }
+  #suggestion .suggestion-img {
+    background-image: url(../images/Rectangle\ 36.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 480px;
+  }
+  #suggestion .suggestion-img h6 {
+    font-family: "gothambold";
+    padding-bottom: 6px;
+    text-align: center;
+    font-style: italic;
+  }
+  #suggestion .suggestion-img p {
+    text-align: center;
+  }
+  #suggestion .suggestion-img-one {
+    background-image: url(../images/Rectangle\ 37.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 480px;
+  }
+  #suggestion .suggestion-img-one h6 {
+    font-family: "gothambold";
+    padding-bottom: 6px;
+    text-align: center;
+    font-style: italic;
+  }
+  #suggestion .suggestion-img-one p {
+    text-align: center;
+  }
+  #suggestion .overlay {
+    background-image: linear-gradient(rgba(25, 10, 1, 0), #0f0600);
+    width: 100%;
+    height: 100%;
+  }
+  #testimonials {
+    font-family: "gothamlight";
+    margin-top: 60px;
+    height: 100vh;
+  }
+  #testimonials .testimony {
+    display: none;
+  }
+  #testimonials .test {
+    display: block;
+  }
+  #testimonials .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  #testimonials .heading h2 {
+    padding-bottom: 80px;
+  }
+  #testimonials .img-one {
+    background-image: url(../images/Rectangle\ 46.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "gothambold";
+    font-style: italic;
+    text-align: center;
+  }
+  #testimonials .img-one .overlay {
+    background-color: rgba(198, 76, 28, 0.5137);
+    width: 100%;
+    height: 100%;
+    padding-top: 400px;
+  }
+  #testimonials .img-two {
+    border: 1px solid #e93f33;
+    height: 60vh;
+    text-align: center;
+    padding-top: 40px;
+  }
+  #testimonials .img-two p {
+    padding-top: 20px;
+    line-height: 30px;
+  }
+  #testimonials .img-two hr {
+    color: #E93F33;
+    width: 18%;
+    margin-left: 260px;
+  }
+  #testimonials .img-two h6 {
+    font-family: "gothambold";
+    font-style: italic;
+    padding-top: 20px;
+  }
+  #testimonials .img-three {
+    background-image: url(../images/Rectangle\ 45.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "gothambold";
+    font-style: italic;
+    text-align: center;
+  }
+  #testimonials .img-three .overlay {
+    background-color: rgba(198, 76, 28, 0.5137);
+    width: 100%;
+    height: 100%;
+    padding-top: 400px;
+  }
+  #gallery {
+    font-family: "gothamlight";
+    margin-top: 20px;
+    height: 100vh;
+  }
+  #gallery .gallery-inner .heading {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  #gallery .gallery-inner .heading h2 {
+    padding-bottom: 80px;
+  }
+  #footer {
+    font-family: "gothamlight";
+    height: 40vh;
+    margin-top: 250px;
+    background-color: #E93F33;
+    color: rgb(255, 255, 255);
+  }
+  #footer .foot {
+    line-height: 50px;
+  }
+  #footer .foot h5 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: "gothambold";
+  }
+  #footer .foot p {
+    font-size: 15px;
+  }
+  footer {
+    border: none;
+    border-top: 1px solid #fff;
+    font-family: "gothamlight";
+    height: 10vh;
+    background-color: #E93F33;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  footer p {
+    padding-top: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
